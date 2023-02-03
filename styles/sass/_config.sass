@@ -1,0 +1,115 @@
+* 
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+  background: #F5F5F5
+
+.container 
+  max-width: 594px
+  margin: 0 auto
+  font-family: 'Inter', sans-serif
+  font-style: normal
+
+.header
+  padding-top: 80px
+  padding-bottom: 33px
+  &__title
+    text-align: center
+    font-weight: 700
+    font-size: 58px
+    line-height: 70px
+
+.main
+  &__wrapper
+    box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16)
+    border-radius: 16px
+    background-color: #FFFFFF
+  &__wrapper-input
+    padding: 24px
+    display: flex
+    column-gap: 24px
+
+    border-bottom: 1px solid #DEE2E6
+  &__input
+    width: 456px
+    height: 38px
+    padding-left: 13.56px
+
+    font-weight: 400
+    font-size: 16px
+    line-height: 21px
+    color: #54595E
+
+    border: 1px solid #CED4DA
+    border-radius: 4px
+  &__button
+    height: 39px
+
+    font-weight: 600
+    font-size: 16px
+    line-height: 19px
+    text-align: center
+    color: #FFFFFF
+
+    border-radius: 4px
+  &__button-input
+    width: 166px
+
+    background: #272829
+  &__wrapper-task-list
+    padding: 32px 24px
+  &__task
+    display: flex
+    justify-content: space-between
+    column-gap: 16px
+    margin-bottom: 26px
+    &:last-of-type
+      margin-bottom: 0
+  &__wrapper-footer
+    padding: 18px 24px
+    display: flex
+    justify-content: space-between
+
+    background: #F5F5F5
+    border-radius: 0px 0px 16px 16px
+  &__button-delete-ready
+    width: 214px
+
+    background: #6C757D
+  &__button-delete-all
+    width: 131px
+    background: #DC3545
+
+.task
+  &__label
+    display: block
+    margin: auto
+  &__status
+    position: absolute
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+  &__new-status
+    display: block
+    width: 1em
+    height: 1em
+    background-image: url("../../images/checkbox.svg")
+    background-size: cover
+  &__status:hover + &__new-status
+    background-image: url("../../images/checkbox-focused.svg")
+  &__status:checked + &__new-status
+    background-image: url("../../images/checkbox-selected.svg")
+  &__status:checked:hover + &__new-status
+    background-image: url("../../images/checkbox-selected-focused.svg")
+  &__text
+    flex-grow: 1
+
+    font-weight: 400
+    font-size: 16px
+    line-height: 21px
+    color: #54595E
+  &__delete
+    background-color: #FFFFFF
+  &__delete:hover
+    font-size: 1.07em
