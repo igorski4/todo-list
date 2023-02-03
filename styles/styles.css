@@ -239,17 +239,17 @@ html {
   display: block;
   width: 1em;
   height: 1em;
-  background-image: url("../../images/checkbox.svg");
+  background-image: url("../images/checkbox.svg");
   background-size: cover;
 }
 .task__status:hover + .task__new-status {
-  background-image: url("../../images/checkbox-focused.svg");
+  background-image: url("../images/checkbox-focused.svg");
 }
 .task__status:checked + .task__new-status {
-  background-image: url("../../images/checkbox-selected.svg");
+  background-image: url("../images/checkbox-selected.svg");
 }
 .task__status:checked:hover + .task__new-status {
-  background-image: url("../../images/checkbox-selected-focused.svg");
+  background-image: url("../images/checkbox-selected-focused.svg");
 }
 .task__text {
   flex-grow: 1;
