@@ -192,6 +192,12 @@ html {
   color: #FFFFFF;
   border-radius: 4px;
 }
+.main__button:hover {
+  opacity: 0.85;
+}
+.main__button:active {
+  transform: scale(1.035);
+}
 .main__button-input {
   width: 166px;
   background: #272829;
