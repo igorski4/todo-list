@@ -264,9 +264,26 @@ html {
   line-height: 21px;
   color: #54595E;
 }
+.task__edit-input {
+  width: 450px;
+  height: 38px;
+  padding-left: 17.14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #54595E;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
 .task__delete {
   background-color: #FFFFFF;
 }
 .task__delete:hover {
+  font-size: 1.07em;
+}
+.task__edit-symbol {
+  background-color: #FFFFFF;
+}
+.task__edit-symbol:hover {
   font-size: 1.07em;
 }/*# sourceMappingURL=styles.css.map */
