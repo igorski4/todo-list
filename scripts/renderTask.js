@@ -1,6 +1,11 @@
 import { taskList } from "./globalVariable.js";
+import { addButtons } from "./addButtons.js";
 
 export const renderTask = (elem) => {
+  if (JSON.parse(localStorage.getItem("task")).length === 1) {
+    taskList.className = "main__wrapper-task-list";
+    addButtons();
+  }
   let task = document.createElement("div");
   task.className = "main__task task";
   task.innerHTML = `
